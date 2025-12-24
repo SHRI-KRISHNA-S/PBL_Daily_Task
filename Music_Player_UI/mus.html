@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Music Player UI</title>
+<style>
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #121212, #1f1f1f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.player {
+    width: 320px;
+    background: #222222;
+    padding: 15px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+.cover {
+    width: 95%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.song {
+    color: #fff;
+    font-size: 20px;
+}
+.artist {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+audio {
+    width: 100%;
+    margin-top: 10px;
+    filter: invert(1);
+}
+</style>
+</head>
+<body>
+<div class="player">
+    <img src="Viswasam.webp" alt="Album Cover" class="cover">
+    <h2 class="song">ADCHITHOOKU</h2>
+    <p class="artist">D.Imman</p>
+    <audio controls>
+        <source src="Adchithooku.mp3" type="audio/mpeg">
+    </audio>
+</div>
+</body>
+</html>
